@@ -11,7 +11,11 @@ function App() {
             alert('No server')
             return form
         } else {
-            const resp = await fetch(process.env.REACT_APP_ROOT_URL + ':' + process.env.REACT_APP_ROOT_PORT + '/foo/create/', {
+            // const resp = await fetch(process.env.REACT_APP_ROOT_URL + ':' + process.env.REACT_APP_ROOT_PORT + '/foo/create/', {
+            // const serverIp = 'http://localhost:3000/foo/create/'
+            const serverIp = 'http://localhost:3000/foo/create/'
+            console.log("server ip" , serverIp)
+            const resp = await fetch( serverIp, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ ...form })

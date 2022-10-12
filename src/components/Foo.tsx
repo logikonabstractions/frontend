@@ -17,7 +17,7 @@ export const Foo = ({onCreateForm}) => {
 
     return (
         <>
-            <h1>this is foo</h1>
+            <h1>this is foo!</h1>
             <Link to='/'>back home</Link>
             <form className="add-form" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-control">
