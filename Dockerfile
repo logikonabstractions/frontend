@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:18
 # FROM node:18
 RUN mkdir -p /home/node/app/frontend && chown -R node:node /home/node/app/frontend
 WORKDIR /home/node/app/frontend
